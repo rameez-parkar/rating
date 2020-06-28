@@ -1,1 +1,44 @@
 @import './rating-bar-map.scss';
+@mixin label-fonts {
+    color: var(--rating-bar-label-colo)r;
+    font-family: var(--rating-bar-font-family);
+    font-weight: var(--rating-bar-font-weight);
+}
+
+:host([type='linear']) {
+    display: block;
+    width: $rating-bar-linear-width;
+}
+
+.linear-track {
+    background-color: var(--rating-bar-background-color);
+    border-radius: $rating-bar-linear-border-radius;
+    width: $rating-bar-linear-track-width;
+    .linear-track__indicator {
+        border-radius: $rating-bar-linear-track__indicator-border-radius;
+        height: $rating-bar-linear-track__indicator-height;
+        margin-bottom: var(--rating-bar-linear-track-padding);
+        &.linear-track--excellent {
+            background-color: var(--rating-bar-excellent);
+        }
+        &.linear-track--great {
+            background-color: var(--rating-bar-great);
+        }
+        &.linear-track--average {
+            background-color: var(--rating-bar-average)
+        }
+        &.linear-track--poor {
+            background-color: var(--rating-bar-poor);
+        }
+        &.linear-track--bad {
+            background-color: var(--rating-bar-bad);
+        }
+    }
+}
+
+.linear-track__info {
+    @include label-fonts;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--rating-bar-linear-rating-info-font-size);
+}

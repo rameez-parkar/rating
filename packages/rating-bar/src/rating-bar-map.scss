@@ -1,0 +1,21 @@
+:host {
+    // customize variable
+    --rating-bar-font-family: var(--global-font-family);
+    --rating-bar-font-weight: var(--font-weight-semi-bold);
+    --rating-bar-label-color: var(--primary-text);
+    --rating-bar-linear-rating-info-font-size: 1.6rem;
+    --rating-bar-background-color: var(--separator-01);
+    --rating-bar-linear-track-padding: var(--spacing-03);
+    --rating-bar-excellent: var(--primary);
+    --rating-bar-great: var(--rating-great);
+    --rating-bar-average: var(--warning);
+    --rating-bar-poor: var(--rating-poor);
+    --rating-bar-bad: var(--error);
+}
+
+// non-customize variable
+$rating-bar-linear-width: 100%;
+$rating-bar-linear-track-width: 100%;
+$rating-bar-linear-border-radius: 25px;
+$rating-bar-linear-track__indicator-border-radius: 25px;
+$rating-bar-linear-track__indicator-height: 8px;

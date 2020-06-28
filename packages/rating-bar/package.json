@@ -1,45 +1,49 @@
 {
-  "name": "@rating/rating-bar",
-  "version": "0.0.1",
-  "description": "Orxe Component",
-  "main": "dist/index.js",
-  "types": "dist/types",
-  "files": [
-    "dist"
-  ],
-  "license": "UNLICENSED",
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
+    "name": "@rating/rating-bar",
+    "version": "0.0.1",
+    "description": "Orxe Component",
+    "main": "dist/index.js",
+    "types": "dist/types",
+    "files": [
+        "dist"
     ],
-    "*.md": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "author": "ORXe",
-  "scripts": {
-    "test": "jest",
-    "test:skipaxe": "jest \"^(.*\/)*(.*\\.)*(spec)\\.ts$\"",
-    "test:coverage": "jest --coverage",
-    "prebuild": "rimraf dist",
-    "start": "webpack-dev-server --config ../../webpack.config.js --open",
-    "build:custom": "webpack --config ../../webpack.config.js --production",
-    "build": "tsc"
-  },
-  "dependencies": {
-    "lit-element": "^2.2.1",
-    "lit-html": "^1.1.2"
-  },
-  "devDependencies": {
-    "@orxe-devkit/sass-to-ts": "^1.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://packages.common.cnxloyalty.com/repository/npm-hosted/"
-  }
+    "license": "UNLICENSED",
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "lint-staged": {
+        "*.{js,ts}": [
+            "eslint --fix",
+            "prettier --write",
+            "git add"
+        ],
+        "*.md": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "author": "ORXe",
+    "scripts": {
+        "test": "jest",
+        "test:skipaxe": "jest \"^(.*/)*(.*\\.)*(spec)\\.ts$\"",
+        "test:coverage": "jest --coverage",
+        "prebuild": "rimraf dist",
+        "start": "webpack-dev-server --config ../../webpack.config.js --open",
+        "build:custom": "webpack --config ../../webpack.config.js --production",
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@orxe-components/theme": "^1.0.7",
+        "@orxe-components/utils": "^1.0.4",
+        "@orxe-culture/lit": "^1.0.0",
+        "lit-element": "^2.2.1",
+        "lit-html": "^1.1.2"
+    },
+    "devDependencies": {
+        "@orxe-culture/core": "^1.0.0",
+        "@orxe-devkit/sass-to-ts": "^1.0.0"
+    },
+    "publishConfig": {
+        "registry": "https://packages.common.cnxloyalty.com/repository/npm-hosted/"
+    }
 }
