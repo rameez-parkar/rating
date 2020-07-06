@@ -36,12 +36,14 @@
         "@orxe-components/theme": "^1.0.7",
         "@orxe-components/utils": "^1.0.4",
         "@orxe-culture/lit": "^1.0.0",
+        "@types/testing-library__jest-dom": "^5.9.1",
         "lit-element": "^2.2.1",
         "lit-html": "^1.1.2"
     },
     "devDependencies": {
         "@orxe-culture/core": "^1.0.0",
-        "@orxe-devkit/sass-to-ts": "^1.0.0"
+        "@orxe-devkit/sass-to-ts": "^1.0.0",
+        "@testing-library/jest-dom": "^5.3.0"
     },
     "publishConfig": {
         "registry": "https://packages.common.cnxloyalty.com/repository/npm-hosted/"
